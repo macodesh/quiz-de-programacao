@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz de Programação</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="main-title">Quiz de Programação</h1>
+
+      <div id="score-container" class="hide">
+        <h2>Parabéns!</h2>
+        <p><span id="display-score">90</span>%</p>
+        <p>
+          Você acertou <span id="correct-answers">0</span> de
+          <span id="questions-qty">10</span> perguntas
+        </p>
+        <button id="restart" type="button">Reiniciar</button>
+      </div>
+
+      <div id="quiz-container">
+        <p id="question">
+          <span id="question-number">1 </span>
+          -
+          <span id="question-text">
+            Qual a unidade de medida para metros?
+          </span>
+        </p>
+
+        <div id="answers-box">
+          <button type="button">
+            <span class="btn-option">A</span>
+            <span class="question-answer">m</span>
+          </button>
+
+          <button type="button">
+            <span class="btn-option">B</span>
+            <span class="question-answer">mt</span>
+          </button>
+
+          <button type="button">
+            <span class="btn-option">C</span>
+            <span class="question-answer">mm</span>
+          </button>
+
+          <button type="button">
+            <span class="btn-option">D</span>
+            <span class="question-answer">um</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <button type="button" class="answer-template hide">
+      <span class="btn-option">A</span>
+      <span class="question-answer">m</span>
+    </button>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
